@@ -1,3 +1,31 @@
+.custom-shape-divider-top-1644954627 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1644954627 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 107px;
+}
+
+.custom-shape-divider-top-1644954627 .shape-fill {
+  fill: #d3a999;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1644954627 svg {
+    width: calc(200% + 1.3px);
+    height: 100px;
+  }
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -267,7 +295,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100vw;
-  height: 15vh;
+  height: 12vh;
   z-index: 100;
 }
 
@@ -323,8 +351,95 @@ body {
   position: relative;
   text-decoration: none;
   color: #211d1e;
-  padding: 1em;
+  padding: 0.7em;
   margin: 1em;
+}
+
+.nav__items--item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  background-color: #211d1e;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  content: '';
+}
+
+.nav__items--item:hover::before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.section-up {
+  position: relative;
+}
+
+.custom-shape-divider-top-1644954798 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1644954798 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 107px;
+}
+
+.custom-shape-divider-top-1644954798 .shape-fill {
+  fill: #d3a999;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1644954798 svg {
+    width: calc(200% + 1.3px);
+    height: 90px;
+  }
+}
+
+.section-down {
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1644954848 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1644954848 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 107px;
+}
+
+.custom-shape-divider-bottom-1644954848 .shape-fill {
+  fill: #d3a999;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1644954848 svg {
+    width: calc(200% + 1.3px);
+    height: 90px;
+  }
 }
 
 .section-test {
