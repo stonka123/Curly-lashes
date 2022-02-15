@@ -20,6 +20,16 @@ body {
 	font-family: 'Proza Libre', sans-serif;
 	font-size: 1.6rem;
 }
+.arrow-down {
+	position: absolute;
+	margin: 0 auto;
+	bottom: 2vh;
+	font-size: 2rem;
+	color: $light-pink-color;
+	padding: 0.5em;
+	cursor: pointer;
+	z-index: 50;
+}
 .header {
 	position: relative;
 	display: flex;
@@ -30,7 +40,6 @@ body {
 	height: 100vh;
 	&-title,
 	&-text {
-		// position: absolute;
 		font-family: 'Dancing Script', cursive;
 		margin: 1em;
 		color: $light-pink-color;
@@ -84,17 +93,8 @@ body {
 }
 // nav mobile
 .nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	overflow-x: hidden;
-	height: 100vh;
-	width: 100vw;
-
 	&__items {
+		position: fixed;
 		top: 0;
 		left: 0;
 		display: flex;
