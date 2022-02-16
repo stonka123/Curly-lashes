@@ -261,23 +261,42 @@ body {
 
 // team
 .box {
-	position: relative;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	width: 300px;
-	height: 200px;
+	height: 300px;
+	margin: 1em auto;
+	background-color: $light-pink-color;
+	border-radius: 8px;
 	&__img {
-		position: absolute;
+		height: 100%;
 		width: 50%;
-		top: 0;
-		left: 0;
-		height: 150px;
+		object-fit: cover;
+		border-radius: 8px;
 	}
 	&__text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
 		width: 50%;
 		height: 100%;
+		&-name {
+			font-size: 2rem;
+			text-align: center;
+		}
+		&-post {
+			font-family: 'Dancing Script', cursive;
+			text-align: center;
+			font-size: 1.8rem;
+		}
+		&-info {
+			text-align: center;
+
+			font-size: 1.3rem;
+		}
 	}
 }
 
