@@ -222,6 +222,12 @@ body {
   font-size: 1.6rem;
 }
 
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
 .arrow-down {
   position: absolute;
   margin: 0 auto;
@@ -271,7 +277,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../img/header-logo-big.jpg);
+  background-image: url(../img/header-logo-small.jpg);
   background-size: cover;
   background-attachment: center;
   background-position: center;
@@ -376,69 +382,147 @@ body {
           transform: scaleY(1);
 }
 
-.section-up {
+.main {
   position: relative;
 }
 
-.custom-shape-divider-top-1644954798 {
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
+  width: 100vw;
+  background-color: #e9e6e1;
+}
+
+.section-title {
+  display: block;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #211d1e;
+}
+
+.aboutus {
+  position: relative;
+  margin: 1em auto;
+  text-align: center;
+  z-index: 3;
+}
+
+.aboutus-text {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.offer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 3;
+}
+
+.card__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 300px;
+  height: 500px;
+  margin: 1em auto;
+  border-radius: 10px;
+  background-color: #d3a999;
+  color: #211d1e;
+}
+
+.card__box-img {
+  width: 60%;
+  border-radius: 10px;
+  height: 30%;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__box-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card__box-text {
+  text-align: center;
+  margin: 1em;
+  font-size: 1.3rem;
+}
+
+.card__box-price {
+  font-size: 2rem;
+  font-weight: bold;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 1em;
+  color: #c03131;
+}
+
+.section-space {
+  position: relative;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.custom-shape-divider-top-1645021744 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1644954798 svg {
+.custom-shape-divider-top-1645021744 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 107px;
+  height: 150px;
 }
 
-.custom-shape-divider-top-1644954798 .shape-fill {
+.custom-shape-divider-top-1645021744 .shape-fill {
   fill: #d3a999;
 }
 
 /** For mobile devices **/
 @media (max-width: 767px) {
-  .custom-shape-divider-top-1644954798 svg {
-    width: calc(200% + 1.3px);
-    height: 90px;
-  }
-}
-
-.section-down {
-  position: relative;
-}
-
-.custom-shape-divider-bottom-1644954848 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1644954848 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 107px;
-}
-
-.custom-shape-divider-bottom-1644954848 .shape-fill {
-  fill: #d3a999;
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-bottom-1644954848 svg {
-    width: calc(200% + 1.3px);
-    height: 90px;
+  .custom-shape-divider-top-1645021744 svg {
+    width: calc(216% + 1.3px);
+    height: 387px;
   }
 }
 
