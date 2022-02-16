@@ -86,7 +86,7 @@
 .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #e9e6e1;
+  background-color: #e9e7e2;
   border-radius: 4px;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
@@ -228,12 +228,16 @@ body {
   max-width: 1200px;
 }
 
+.sticky-body {
+  overflow: hidden;
+}
+
 .arrow-down {
   position: absolute;
   margin: 0 auto;
   bottom: 2vh;
   font-size: 2rem;
-  color: #e9e6e1;
+  color: #e9e7e2;
   padding: 0.5em;
   cursor: pointer;
   z-index: 50;
@@ -261,7 +265,7 @@ body {
 .header-title, .header-text {
   font-family: 'Dancing Script', cursive;
   margin: 1em;
-  color: #e9e6e1;
+  color: #e9e7e2;
   z-index: 3;
 }
 
@@ -308,7 +312,7 @@ body {
 .nav__top-logo {
   font-family: 'Dancing Script', cursive;
   text-decoration: none;
-  color: #e9e6e1;
+  color: #e9e7e2;
   font-size: 2rem;
   z-index: 100;
   padding: 0.5em 1em;
@@ -316,7 +320,6 @@ body {
 
 .nav__top--darkness {
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 99;
 }
 
 .hamburger {
@@ -403,7 +406,7 @@ body {
           justify-content: center;
   height: 10vh;
   width: 100vw;
-  background-color: #e9e6e1;
+  background-color: #e9e7e2;
 }
 
 .section-title {
@@ -443,7 +446,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   z-index: 3;
-  background-color: #e9e6e1;
+  background-color: #e9e7e2;
 }
 
 .card {
@@ -465,8 +468,10 @@ body {
   height: 500px;
   margin: 1em;
   border-radius: 10px;
-  background-color: #d3a999;
+  background-color: #ebc5ae;
   color: #211d1e;
+  -webkit-box-shadow: 2px 2px 2px #d4b6aa;
+          box-shadow: 2px 2px 2px #d4b6aa;
 }
 
 .card-img {
@@ -502,6 +507,7 @@ body {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+  margin: 1em;
 }
 
 .card__box-text {
@@ -545,15 +551,14 @@ body {
   fill: #d3a999;
 }
 
-/** For mobile devices **/
-@media (max-width: 767px) {
+.section-test {
+  height: 400vh;
+}
+
+@media (max-width: 768px) {
   .custom-shape-divider-top-1645021744 svg {
     width: calc(216% + 1.3px);
     height: 387px;
   }
-}
-
-.section-test {
-  height: 400vh;
 }
 /*# sourceMappingURL=main.css.map */
