@@ -19,6 +19,7 @@ body {
 	// font-family: 'Dancing Script', cursive;
 	font-family: 'Proza Libre', sans-serif;
 	font-size: 1.6rem;
+	overflow-x: hidden;
 }
 .wrapper {
 	margin: 0 auto;
@@ -279,7 +280,12 @@ body {
 }
 
 // team
-
+.section-team {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
 .box {
 	position: relative;
 	display: flex;
@@ -292,7 +298,7 @@ body {
 	margin: 1em auto;
 	background-color: $light-pink-color;
 	border-radius: 8px;
-	z-index: 100;
+	z-index: 3;
 	&__img {
 		height: 100%;
 		width: 50%;

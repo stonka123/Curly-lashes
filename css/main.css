@@ -220,6 +220,7 @@ html {
 body {
   font-family: 'Proza Libre', sans-serif;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -571,6 +572,20 @@ body {
   fill: #d3a999;
 }
 
+.section-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .box {
   position: relative;
   display: -webkit-box;
@@ -593,7 +608,7 @@ body {
   margin: 1em auto;
   background-color: #e9e7e2;
   border-radius: 8px;
-  z-index: 100;
+  z-index: 3;
 }
 
 .box__img {
