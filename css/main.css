@@ -314,6 +314,11 @@ body {
   padding: 0.5em 1em;
 }
 
+.nav__top--darkness {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+}
+
 .hamburger {
   z-index: 100;
   margin-right: 0.5em;
