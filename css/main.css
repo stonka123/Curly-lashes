@@ -534,7 +534,7 @@ body {
 
 .section-space {
   position: relative;
-  opacity: 0.4;
+  opacity: 1;
   z-index: 1;
 }
 
@@ -555,7 +555,7 @@ body {
 }
 
 .custom-shape-divider-top-1645021744 .shape-fill {
-  fill: #d3a999;
+  fill: #e9e7e2;
 }
 
 .custom-shape-divider-top-1645041067 {
@@ -575,7 +575,7 @@ body {
 }
 
 .custom-shape-divider-top-1645041067 .shape-fill {
-  fill: #d3a999;
+  fill: #d4b6aa;
 }
 
 .section-team {
@@ -674,9 +674,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw;
-  margin: 1em auto;
   background-color: #e9e7e2;
   overflow: hidden;
+  background-color: #e9e7e2;
 }
 
 .gallery-img {

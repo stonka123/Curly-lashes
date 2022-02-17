@@ -244,7 +244,7 @@ body {
 // shape diver
 .section-space {
 	position: relative;
-	opacity: 0.4;
+	opacity: 1;
 	z-index: 1;
 }
 .custom-shape-divider-top-1645021744 {
@@ -264,7 +264,7 @@ body {
 }
 
 .custom-shape-divider-top-1645021744 .shape-fill {
-	fill: #d3a999;
+	fill: $light-pink-color;
 }
 .custom-shape-divider-top-1645041067 {
 	position: absolute;
@@ -283,7 +283,7 @@ body {
 }
 
 .custom-shape-divider-top-1645041067 .shape-fill {
-	fill: #d3a999;
+	fill: $pastels-color;
 }
 
 // team
@@ -347,9 +347,10 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 100vw;
-	margin: 1em auto;
+
 	background-color: $light-pink-color;
 	overflow: hidden;
+	background-color: $light-pink-color;
 
 	&-img {
 		display: inline-block;
