@@ -676,7 +676,6 @@ body {
   width: 100vw;
   background-color: #e9e7e2;
   overflow: hidden;
-  background-color: #e9e7e2;
 }
 
 .gallery-img {
@@ -735,6 +734,68 @@ body {
 
 .section-test {
   height: 400vh;
+}
+
+.section-contact {
+  background-color: #a5aeb7;
+  width: 100vw;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form__name, .form__tel, .form__area, .form__btn {
+  width: 100%;
+  padding: 1em;
+  margin: 1em auto;
+  border: none;
+  border-radius: 8px;
+  background: #a5aeb7;
+  color: #211d1e;
+  border: 2px solid #d4b6aa;
+  line-height: px;
+  font-size: 1.5rem;
+}
+
+.form__area {
+  max-width: 100%;
+  width: 100%;
+  min-height: 150px;
+}
+
+.form__btn {
+  padding: 1em 1.3em;
+  background: #d4b6aa;
+  border: 2px solid #d4b6aa;
+  cursor: pointer;
+  border-radius: 8px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #211d1e;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.form__btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
