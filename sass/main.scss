@@ -463,6 +463,69 @@ body {
 		background-color: $light-pink-color;
 	}
 }
+.contact-icon {
+	color: $pastels-color;
+	font-size: 3rem;
+}
+
+.adress {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: $light-pink-color;
+	width: 100vw;
+	text-align: center;
+
+	&__hours {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 2em;
+
+		&-text {
+			font-size: 2rem;
+		}
+	}
+}
+.adress__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2em;
+	&-icon {
+		color: $pastels-color;
+		font-size: 3rem;
+	}
+	&-adress {
+		font-size: 1.8rem;
+		margin-top: 0.5em;
+	}
+}
+.adress__contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2em;
+}
+.contact__box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	&-icon {
+		font-size: 2rem;
+		color: $pastels-color;
+		margin-right: 0.5em;
+	}
+	&-content {
+		margin-top: 0.5em;
+		font-size: 1.8rem;
+	}
+}
 
 // MEDIA
 @media (max-width: 576px) {
