@@ -421,10 +421,12 @@ body {
   position: relative;
   margin: 1em auto;
   text-align: center;
+  line-height: 2em;
   z-index: 3;
 }
 
 .aboutus-text {
+  margin-top: 2em;
   text-align: center;
 }
 
@@ -498,19 +500,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 75%;
 }
 
 .card__box-title {
   text-align: center;
+  margin-bottom: 1.5em;
   width: 100%;
   font-size: 2rem;
   font-weight: bold;
 }
 
 .card__box-text {
+  margin-bottom: 1.5em;
   text-align: center;
   height: 65%;
   font-size: 1.5rem;
