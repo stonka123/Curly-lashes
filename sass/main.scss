@@ -170,8 +170,9 @@ body {
 	margin: 1em auto;
 	text-align: center;
 	z-index: 3;
+
 	&-text {
-		margin-top: 1em;
+		// margin-top: 1em;
 		text-align: center;
 	}
 }
@@ -199,9 +200,9 @@ body {
 	color: $text-color;
 	box-shadow: 2px 2px 2px $pastels-color;
 	&-img {
-		width: 160px;
+		width: 140px;
 		border-radius: 10px;
-		height: 30%;
+		height: 25%;
 		filter: brightness(0.5);
 		background-size: cover;
 		background-position: center;
@@ -209,23 +210,27 @@ body {
 		margin-top: 1em;
 	}
 	&__box {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		height: 70%;
+		justify-content: space-around;
+		height: 75%;
 		&-title {
 			text-align: center;
+			// height: 10%;
+			width: 100%;
 			font-size: 2rem;
 			font-weight: bold;
-			margin: 1em;
 		}
 		&-text {
 			text-align: center;
-			margin: 1em;
-			font-size: 1.3rem;
+			height: 65%;
+			font-size: 1.5rem;
 		}
 		&-price {
+			bottom: 0.5em;
+			position: absolute;
 			font-size: 2rem;
 			font-weight: bold;
 			align-self: flex-end;

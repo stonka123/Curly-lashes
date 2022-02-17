@@ -425,7 +425,6 @@ body {
 }
 
 .aboutus-text {
-  margin-top: 1em;
   text-align: center;
 }
 
@@ -476,9 +475,9 @@ body {
 }
 
 .card-img {
-  width: 160px;
+  width: 140px;
   border-radius: 10px;
-  height: 30%;
+  height: 25%;
   -webkit-filter: brightness(0.5);
           filter: brightness(0.5);
   background-size: cover;
@@ -488,6 +487,7 @@ body {
 }
 
 .card__box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,26 +498,27 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 70%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 75%;
 }
 
 .card__box-title {
   text-align: center;
+  width: 100%;
   font-size: 2rem;
   font-weight: bold;
-  margin: 1em;
 }
 
 .card__box-text {
   text-align: center;
-  margin: 1em;
-  font-size: 1.3rem;
+  height: 65%;
+  font-size: 1.5rem;
 }
 
 .card__box-price {
+  bottom: 0.5em;
+  position: absolute;
   font-size: 2rem;
   font-weight: bold;
   -ms-flex-item-align: end;
