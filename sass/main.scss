@@ -329,6 +329,73 @@ body {
 	}
 }
 
+// gallery
+// .section-gallery {
+// 	width: 100vw;
+// 	margin: 0 auto;
+// }
+.gallery {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	margin: 1em auto;
+	background-color: $light-pink-color;
+	overflow: hidden;
+
+	&-img {
+		display: inline-block;
+		margin: 1em;
+		border: 3px solid $pastels-color;
+		width: 400px;
+		max-width: 600px;
+		height: 400px;
+		object-fit: cover;
+
+		&-img:hover {
+			transform: rotateZ(150deg);
+		}
+	}
+}
+.slick-prev {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	background: url(https://raw.githubusercontent.com/solodev/fontawesome-slickslider-links/master/images/arrow.png)
+		center no-repeat;
+	fill: #f1f1f1;
+	border-radius: 3px;
+	border: 1px solid $pastels-color;
+	background-color: $gray-color;
+	opacity: 0.8;
+	width: 30px;
+	height: 30px;
+	text-indent: -10000px;
+	z-index: 2;
+	margin-top: -15px;
+	cursor: pointer;
+}
+.slick-next {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	background: url(https://raw.githubusercontent.com/solodev/fontawesome-slickslider-links/master/images/arrow.png)
+		center no-repeat;
+	fill: #f1f1f1;
+	border-radius: 3px;
+	border: 1px solid $pastels-color;
+	background-color: $gray-color;
+	opacity: 0.8;
+	width: 30px;
+	height: 30px;
+	text-indent: -10000px;
+	z-index: 2;
+	margin-top: -15px;
+	transform: rotate(180deg);
+	cursor: pointer;
+}
+
 .section-test {
 	height: 400vh;
 }

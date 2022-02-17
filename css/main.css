@@ -653,6 +653,80 @@ body {
   font-size: 1.3rem;
 }
 
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  margin: 1em auto;
+  background-color: #e9e7e2;
+  overflow: hidden;
+}
+
+.gallery-img {
+  display: inline-block;
+  margin: 1em;
+  border: 3px solid #d4b6aa;
+  width: 400px;
+  max-width: 600px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-img-img:hover {
+  -webkit-transform: rotateZ(150deg);
+          transform: rotateZ(150deg);
+}
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  background: url(https://raw.githubusercontent.com/solodev/fontawesome-slickslider-links/master/images/arrow.png) center no-repeat;
+  fill: #f1f1f1;
+  border-radius: 3px;
+  border: 1px solid #d4b6aa;
+  background-color: #a5aeb7;
+  opacity: 0.8;
+  width: 30px;
+  height: 30px;
+  text-indent: -10000px;
+  z-index: 2;
+  margin-top: -15px;
+  cursor: pointer;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  background: url(https://raw.githubusercontent.com/solodev/fontawesome-slickslider-links/master/images/arrow.png) center no-repeat;
+  fill: #f1f1f1;
+  border-radius: 3px;
+  border: 1px solid #d4b6aa;
+  background-color: #a5aeb7;
+  opacity: 0.8;
+  width: 30px;
+  height: 30px;
+  text-indent: -10000px;
+  z-index: 2;
+  margin-top: -15px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  cursor: pointer;
+}
+
 .section-test {
   height: 400vh;
 }
