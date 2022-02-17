@@ -736,7 +736,7 @@ body {
   height: 400vh;
 }
 
-.section-contact {
+.form-box {
   background-color: #a5aeb7;
   width: 100vw;
 }
@@ -796,6 +796,27 @@ body {
 .form__btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__map {
+  margin: 1em;
+  background-color: #e9e7e2;
 }
 
 @media (max-width: 768px) {

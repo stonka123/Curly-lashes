@@ -407,7 +407,7 @@ body {
 }
 
 // CONTACT
-.section-contact {
+.form-box {
 	background-color: $gray-color;
 	width: 100vw;
 }
@@ -451,6 +451,16 @@ body {
 		&:hover {
 			transform: scale(1.1);
 		}
+	}
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	&__map {
+		margin: 1em;
+		background-color: $light-pink-color;
 	}
 }
 
