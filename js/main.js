@@ -5,6 +5,7 @@ navBarLogo = document.querySelector('.nav__top-logo')
 navTop = document.querySelector('.nav__top')
 darkTop = document.querySelector('.nav__top--darkness')
 main = document.querySelector('.main')
+footer = document.querySelector('.footer__text-year')
 
 const showNav = () => {
 	burgerBtn.classList.toggle('is-active')
@@ -39,5 +40,9 @@ const handleObserve = () => {
 	}
 }
 
+const checkYear = () => {
+	footer.textContent = new Date().getFullYear()
+}
+checkYear()
 window.addEventListener('scroll', handleObserve)
 burgerBtn.addEventListener('click', showNav)

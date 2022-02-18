@@ -526,6 +526,20 @@ body {
 		font-size: 1.8rem;
 	}
 }
+.contact__box:last-child {
+	margin-bottom: 2em;
+}
+.footer {
+	width: 100vw;
+	background-color: $gray-color;
+	height: 8vh;
+	display: flex;
+	&__text {
+		margin: auto;
+		text-align: center;
+		font-size: 1.4rem;
+	}
+}
 
 // MEDIA
 @media (max-width: 576px) {

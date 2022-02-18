@@ -935,6 +935,25 @@ body {
   font-size: 1.8rem;
 }
 
+.contact__box:last-child {
+  margin-bottom: 2em;
+}
+
+.footer {
+  width: 100vw;
+  background-color: #a5aeb7;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__text {
+  margin: auto;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
 @media (max-width: 768px) {
   .custom-shape-divider-top-1645021744 svg {
     width: calc(216% + 1.3px);
