@@ -332,14 +332,12 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  width: 100vw;
 }
 
 body {
   font-family: 'Proza Libre', sans-serif;
   font-size: 1.6rem;
   overflow-x: hidden;
-  width: 100vw;
 }
 
 .bounce-in-fwd {
@@ -534,7 +532,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 10vh;
-  width: 100vw;
+  width: 100%;
   background-color: #e9e7e2;
 }
 
@@ -867,10 +865,6 @@ body {
   cursor: pointer;
 }
 
-.section-test {
-  height: 400vh;
-}
-
 .form-box {
   background-color: #a5aeb7;
   width: 100vw;
@@ -977,7 +971,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #e9e7e2;
-  width: 100vw;
+  width: 100%;
   text-align: center;
 }
 
@@ -1078,7 +1072,7 @@ body {
 }
 
 .footer {
-  width: 100vw;
+  width: 100%;
   background-color: #a5aeb7;
   height: 8vh;
   display: -webkit-box;

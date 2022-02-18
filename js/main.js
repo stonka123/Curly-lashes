@@ -33,7 +33,7 @@ const checkNav = () => {
 
 const handleObserve = () => {
 	const scrollY = window.scrollY
-	if (main.classList.contains('main') && main.offsetTop <= scrollY + 18) {
+	if (main.classList.contains('main') && main.offsetTop <= scrollY + 70) {
 		navTop.classList.add('nav__top--darkness')
 	} else {
 		navTop.classList.remove('nav__top--darkness')

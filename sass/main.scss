@@ -15,7 +15,6 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 	overflow-x: hidden;
-	width: 100vw;
 }
 
 body {
@@ -23,8 +22,8 @@ body {
 	font-family: 'Proza Libre', sans-serif;
 	font-size: 1.6rem;
 	overflow-x: hidden;
-	width: 100vw;
 }
+
 // animation
 .bounce-in-fwd {
 	animation: bounce-in-fwd 2s infinite backwards;
@@ -166,7 +165,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 10vh;
-	width: 100vw;
+	width: 100%;
 	background-color: $light-pink-color;
 	&-title {
 		display: block;
@@ -415,10 +414,6 @@ body {
 	cursor: pointer;
 }
 
-.section-test {
-	height: 400vh;
-}
-
 // CONTACT
 .form-box {
 	background-color: $gray-color;
@@ -491,7 +486,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: $light-pink-color;
-	width: 100vw;
+	width: 100%;
 	text-align: center;
 
 	&__hours {
@@ -547,7 +542,7 @@ body {
 	margin-bottom: 2em;
 }
 .footer {
-	width: 100vw;
+	width: 100%;
 	background-color: $gray-color;
 	height: 8vh;
 	display: flex;
