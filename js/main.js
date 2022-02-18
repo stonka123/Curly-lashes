@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	darkTop = document.querySelector('.nav__top--darkness')
 	main = document.querySelector('.main')
 	footer = document.querySelector('.footer__text-year')
+	formBtn = document.querySelector('.form__btn')
 
 	const showNav = () => {
 		burgerBtn.classList.toggle('is-active')
@@ -53,6 +54,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	checkYear()
 
+	// form
+	const sendBtn = () => {
+		console.log('wyslano')
+	}
+
 	window.addEventListener('scroll', handleObserve)
 	burgerBtn.addEventListener('click', showNav)
+	formBtn.addEventListener('click', sendBtn)
 })
