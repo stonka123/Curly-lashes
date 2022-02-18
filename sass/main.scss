@@ -33,7 +33,7 @@ body {
 	position: absolute;
 	margin: 0 auto;
 	bottom: 2vh;
-	font-size: 2rem;
+	font-size: 2.4rem;
 	color: $light-pink-color;
 	padding: 0.5em;
 	cursor: pointer;
@@ -542,10 +542,65 @@ body {
 }
 
 // MEDIA
-@media (max-width: 576px) {
+@media (min-width: 576px) {
+	.header {
+		&-title {
+			font-size: 5rem;
+		}
+		&-text {
+			font-size: 2rem;
+		}
+	}
+	.arrow-down {
+		font-size: 3rem;
+	}
+	.section-title {
+		font-size: 4rem;
+	}
+	.aboutus-text {
+		font-size: 1.8rem;
+		margin: 1em;
+	}
+	.contact__map-size {
+		width: 400px;
+		height: 400px;
+	}
+	.footer {
+		&__text {
+			font-size: 1.6rem;
+		}
+	}
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+	.header {
+		&-title {
+			font-size: 7rem;
+		}
+		&-text {
+			font-size: 3rem;
+		}
+	}
+	.arrow-down {
+		font-size: 3.2rem;
+	}
+	.section-title {
+		font-size: 4.5rem;
+	}
+	.aboutus-text {
+		font-size: 2rem;
+		margin: 1em;
+	}
+	.contact__map-size {
+		width: 500px;
+		height: 500px;
+	}
+	.footer {
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
+
 	.custom-shape-divider-top-1645021744 svg {
 		width: calc(216% + 1.3px);
 		height: 387px;
@@ -555,5 +610,5 @@ body {
 		height: 138px;
 	}
 }
-@media (max-width: 992px) {
+@media (min-width: 992px) {
 }

@@ -17,7 +17,7 @@ const showNav = () => {
 			navItems.classList.remove('nav__items--active')
 			navBarLogo.style.color = 'rgb(233, 230, 225)'
 			burgerBtn.classList.remove('is-active')
-			document.body.classList.toggle('sticky-body')
+			document.body.classList.remove('sticky-body')
 		})
 	})
 	checkNav()
