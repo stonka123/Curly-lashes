@@ -29,6 +29,9 @@ body {
 .sticky-body {
 	overflow: hidden;
 }
+.nav__deskop {
+	display: none;
+}
 .arrow-down {
 	position: absolute;
 	margin: 0 auto;
@@ -173,7 +176,7 @@ body {
 	z-index: 3;
 
 	&-text {
-		margin-top: 2em;
+		margin: 2em 1em;
 		text-align: center;
 	}
 }
@@ -292,6 +295,8 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 .box {
 	position: relative;
@@ -337,10 +342,9 @@ body {
 }
 
 // gallery
-// .section-gallery {
-// 	width: 100vw;
-// 	margin: 0 auto;
-// }
+.section-gallery {
+	background-color: $light-pink-color;
+}
 .gallery {
 	display: flex;
 	flex-direction: row;
@@ -349,6 +353,7 @@ body {
 	width: 100vw;
 	background-color: $light-pink-color;
 	overflow: hidden;
+	margin-top: 2em;
 
 	&-img {
 		display: inline-block;
@@ -417,7 +422,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 80%;
-	margin: 0 auto;
+	margin: 1em auto;
 
 	&__name,
 	&__tel,
@@ -453,6 +458,11 @@ body {
 		}
 	}
 }
+.contact__map {
+	&-size {
+		margin: 2em auto;
+	}
+}
 .contact {
 	display: flex;
 	flex-direction: column;
@@ -460,7 +470,6 @@ body {
 	justify-content: center;
 	&__map {
 		margin: 1em;
-		background-color: $light-pink-color;
 	}
 }
 .contact-icon {
@@ -551,6 +560,13 @@ body {
 			font-size: 2rem;
 		}
 	}
+	.nav__top-logo {
+		font-size: 2.6rem;
+	}
+	.nav__items--item {
+		font-size: 1.9rem;
+	}
+
 	.arrow-down {
 		font-size: 3rem;
 	}
@@ -580,6 +596,12 @@ body {
 		&-text {
 			font-size: 3rem;
 		}
+	}
+	.nav__top-logo {
+		font-size: 3rem;
+	}
+	.nav__items--item {
+		font-size: 2.2rem;
 	}
 	.arrow-down {
 		font-size: 3.2rem;
@@ -611,4 +633,85 @@ body {
 	}
 }
 @media (min-width: 992px) {
+	.nav__top {
+		display: none;
+	}
+	.deskop {
+		position: absolute;
+		top: 0;
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		justify-content: space-between;
+		width: 100%;
+		height: 15vh;
+		&-logo {
+			font-family: 'Dancing Script', cursive;
+			text-decoration: none;
+			color: $light-pink-color;
+			font-size: 3rem;
+			margin: auto 1.8em;
+		}
+		&-nav {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: 70%;
+
+			&-item {
+				position: relative;
+				text-align: center;
+				text-decoration: none;
+				color: $light-pink-color;
+				font-size: 2.2rem;
+				margin-left: 2em;
+				padding: 0.5em;
+
+				&::before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 2px;
+					height: 100%;
+					transform: scaleY(0);
+					background-color: $light-pink-color;
+					transition: transform 0.3s;
+					content: '';
+				}
+				&:hover::before {
+					transform: scaleY(1);
+				}
+			}
+		}
+	}
+	.box__text-post {
+		font-size: 2rem;
+	}
+	.form__btn {
+		width: 300px;
+
+		margin-right: 1em;
+	}
+	.contact__map-size {
+		width: 800px;
+		height: 800px;
+	}
+	.adress {
+		flex-direction: row;
+		height: 40vh;
+		margin: 0 auto;
+
+		&__hours,
+		&__box,
+		&__contact {
+			font-size: 3rem;
+			margin: 1em;
+		}
+	}
+	.adress__box-adress,
+	.contact__box-content,
+	.adress__hours-text {
+		font-size: 2rem;
+	}
 }
