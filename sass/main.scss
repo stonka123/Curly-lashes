@@ -26,6 +26,7 @@ body {
 
 // animation
 .bounce-in-fwd {
+	display: block;
 	animation: bounce-in-fwd 2s infinite backwards;
 }
 .wrapper {
@@ -36,7 +37,7 @@ body {
 .sticky-body {
 	overflow: hidden;
 }
-.nav__deskop {
+.deskop {
 	display: none;
 }
 .arrow-down {
@@ -48,6 +49,7 @@ body {
 	padding: 0.5em;
 	cursor: pointer;
 	z-index: 50;
+	text-decoration: none;
 }
 .header {
 	position: relative;
@@ -607,7 +609,7 @@ body {
 		font-size: 2.2rem;
 	}
 	.arrow-down {
-		font-size: 3.2rem;
+		font-size: 3.8rem;
 	}
 	.section-title {
 		font-size: 4.5rem;

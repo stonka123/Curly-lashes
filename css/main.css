@@ -341,6 +341,7 @@ body {
 }
 
 .bounce-in-fwd {
+  display: block;
   -webkit-animation: bounce-in-fwd 2s infinite backwards;
           animation: bounce-in-fwd 2s infinite backwards;
 }
@@ -355,7 +356,7 @@ body {
   overflow: hidden;
 }
 
-.nav__deskop {
+.deskop {
   display: none;
 }
 
@@ -368,6 +369,7 @@ body {
   padding: 0.5em;
   cursor: pointer;
   z-index: 50;
+  text-decoration: none;
 }
 
 .header {
@@ -1132,7 +1134,7 @@ body {
     font-size: 2.2rem;
   }
   .arrow-down {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
   }
   .section-title {
     font-size: 4.5rem;
