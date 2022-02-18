@@ -42,7 +42,7 @@ body {
 .arrow-down {
 	position: absolute;
 	margin: 0 auto;
-	bottom: 2vh;
+	bottom: 10vh;
 	font-size: 2.4rem;
 	color: $light-pink-color;
 	padding: 0.5em;
@@ -627,8 +627,8 @@ body {
 	}
 
 	.custom-shape-divider-top-1645021744 svg {
-		width: calc(216% + 1.3px);
-		height: 387px;
+		width: calc(100% + 1.3px);
+		height: 300px;
 	}
 	.custom-shape-divider-top-1645041067 svg {
 		width: calc(100% + 1.3px);

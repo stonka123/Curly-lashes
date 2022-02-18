@@ -38,11 +38,19 @@ const handleObserve = () => {
 	} else {
 		navTop.classList.remove('nav__top--darkness')
 	}
+	darkBarCheck()
+}
+
+const darkBarCheck = () => {
+	if (navItems.classList.contains('nav__items--active')) {
+		navTop.classList.remove('nav__top--darkness')
+	}
 }
 
 const checkYear = () => {
 	footer.textContent = new Date().getFullYear()
 }
 checkYear()
+
 window.addEventListener('scroll', handleObserve)
 burgerBtn.addEventListener('click', showNav)
