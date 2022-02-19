@@ -934,9 +934,64 @@ body {
           transform: scale(1.1);
 }
 
-.error {
+.error input,
+.error textarea {
   border: 1px solid #bb2b2b;
   background-color: rgba(187, 43, 43, 0.5);
+}
+
+.error .form__error {
+  visibility: visible;
+}
+
+.form-box {
+  position: relative;
+}
+
+.popup {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e9e7e2;
+  top: 50%;
+  left: 200%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border: 2px solid #ebc5ae;
+  border-radius: 8px;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
+}
+
+.popup__text {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.popup__btn {
+  padding: 1em 1.5em;
+  margin-top: 1em;
+  background-color: #d4b6aa;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-popup {
+  left: 50%;
 }
 
 .contact__map-size {

@@ -7,6 +7,8 @@ darkTop = document.querySelector('.nav__top--darkness')
 main = document.querySelector('.main')
 footer = document.querySelector('.footer__text-year')
 formBtn = document.querySelector('.form__btn')
+popup = document.querySelector('.popup')
+popupBtn = document.querySelector('.popup__btn')
 // form
 formName = document.querySelector('#form__name')
 formTel = document.querySelector('#form__tel')
@@ -66,10 +68,16 @@ checkYear()
 
 //sprawdzamy kazdy input cyz ma blad
 
+
 const showError = (input, msg) => {
+	const formBox = input.parentElement
+	const errorMsg = formBox.querySelector('.form__error')
+	formBox.classList.add('error')
+}
 
-
-	
+const clearError = input => {
+	const formBox = input.parentElement
+	formBox.classList.remove('error')
 }
 
 const checkForm = input => {
@@ -77,9 +85,35 @@ const checkForm = input => {
 		if (el.value === '') {
 			showError(el, el.placeholder)
 		} else {
-			console.log('ok')
+			clearError(el)
 		}
 	})
+}
+
+const checkNumber = input => {
+	const re = new RegExp('[0-9]')
+	if (re.test(formTel.value) && formTel.value.length === 9) {
+		clearError(formTel)
+	} else {
+		showError(formTel)
+	}
+}
+const checkErrors = () => {
+	const allInputs = document.querySelectorAll('.form')
+	let errorCount = 0
+	allInputs.forEach(el => {
+		if (el.classList.contains('error')) {
+			errorCount++
+		}
+	})
+
+	if (errorCount === 0) {
+		popup.classList.add('show-popup')
+	}
+}
+
+const closePopup = () => {
+	popup.classList.remove('show-popup')
 }
 
 window.addEventListener('scroll', handleObserve)
@@ -87,4 +121,11 @@ burgerBtn.addEventListener('click', showNav)
 formBtn.addEventListener('click', e => {
 	e.preventDefault() //anty f5 aby nie wysylalo
 	checkForm([formName, formTel, formArea]) //robimy tablice aby pobrac all inputy
+	checkNumber()
+	checkErrors()
+})
+
+popupBtn.addEventListener('click', e => {
+	closePopup()
+	
 })
