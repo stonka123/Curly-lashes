@@ -867,6 +867,22 @@ body {
   cursor: pointer;
 }
 
+.form-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -882,7 +898,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 80vw;
-  margin: 1em auto;
+  margin: 0.5em auto;
 }
 
 .form__name, .form__tel, .form__area, .form__btn {
@@ -894,7 +910,6 @@ body {
   background: #a5aeb7;
   color: #211d1e;
   border: 2px solid #d4b6aa;
-  line-height: px;
   font-size: 1.5rem;
 }
 
@@ -918,9 +933,9 @@ body {
   background: #d4b6aa;
   border: 2px solid #d4b6aa;
   cursor: pointer;
-  border-radius: 8px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  border-radius: 8px;
   color: #211d1e;
   margin-top: 1em;
   -webkit-transition: -webkit-transform 0.3s;
@@ -929,7 +944,7 @@ body {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.form__btn:hover {
+form__btn .form__btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -946,6 +961,15 @@ body {
 
 .form-box {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .popup {
