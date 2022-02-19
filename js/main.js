@@ -58,31 +58,26 @@ const checkYear = () => {
 checkYear()
 
 // form
-// 1 sprawdzenie
-// 2 blad wyswietli
-// 3 wyswietlenie bledu
+// 1 sprawdzenie czy pola sa wypelnione
+// 2 blad wyswietli ktore jest puste
+// 3 wyswietlenie bledu i skasowanie bledu
 
 // pokazuje bledy - input przechowuje input a msg naszego placeholdera
-const showError = (input, msg) => {
-	const formBox = input.parentElement
-	const errorMsg = formBox.querySelector('.error-text')
-	formBox.classList.add('error')
-	errorMsg.textContent = msg
-}
-
-const clearError = input => {
-	const formBox = input.parentElement
-	formBox.classList.remove('error')
-}
 
 //sprawdzamy kazdy input cyz ma blad
+
+const showError = (input, msg) => {
+
+
+	
+}
 
 const checkForm = input => {
 	input.forEach(el => {
 		if (el.value === '') {
 			showError(el, el.placeholder)
 		} else {
-			clearError(el)
+			console.log('ok')
 		}
 	})
 }

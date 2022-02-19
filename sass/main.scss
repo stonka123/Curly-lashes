@@ -436,6 +436,7 @@ body {
 // .form.error .error-text {
 // 	visibility: visible;
 // }
+
 .form {
 	display: flex;
 	flex-direction: column;
@@ -450,7 +451,7 @@ body {
 	&__btn {
 		width: 100%;
 		padding: 1em;
-		margin: 1em auto;
+		margin-top: 0.5em;
 		border: none;
 		border-radius: 8px;
 		background: $gray-color;
@@ -458,6 +459,13 @@ body {
 		border: 2px solid $pastels-color;
 		line-height: px;
 		font-size: 1.5rem;
+	}
+	&__error {
+		font-size: 1.5rem;
+		align-self: flex-start;
+		margin-left: 0.5em;
+		color: rgb(187, 43, 43);
+		visibility: hidden;
 	}
 	&__area {
 		max-width: 100%;
@@ -472,11 +480,16 @@ body {
 		border-radius: 8px;
 		align-self: flex-end;
 		color: $text-color;
+		margin-top: 1em;
 		transition: transform 0.3s;
 		&:hover {
 			transform: scale(1.1);
 		}
 	}
+}
+.error {
+	border: 1px solid rgb(187, 43, 43);
+	background-color: rgba(187, 43, 43, 0.5);
 }
 .contact__map {
 	&-size {

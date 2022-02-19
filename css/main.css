@@ -888,7 +888,7 @@ body {
 .form__name, .form__tel, .form__area, .form__btn {
   width: 100%;
   padding: 1em;
-  margin: 1em auto;
+  margin-top: 0.5em;
   border: none;
   border-radius: 8px;
   background: #a5aeb7;
@@ -896,6 +896,15 @@ body {
   border: 2px solid #d4b6aa;
   line-height: px;
   font-size: 1.5rem;
+}
+
+.form__error {
+  font-size: 1.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 0.5em;
+  color: #bb2b2b;
+  visibility: hidden;
 }
 
 .form__area {
@@ -913,6 +922,7 @@ body {
   -ms-flex-item-align: end;
       align-self: flex-end;
   color: #211d1e;
+  margin-top: 1em;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -922,6 +932,11 @@ body {
 .form__btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.error {
+  border: 1px solid #bb2b2b;
+  background-color: rgba(187, 43, 43, 0.5);
 }
 
 .contact__map-size {
