@@ -867,11 +867,6 @@ body {
   cursor: pointer;
 }
 
-.form-box {
-  background-color: #a5aeb7;
-  width: 100vw;
-}
-
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -886,7 +881,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
+  width: 80vw;
   margin: 1em auto;
 }
 

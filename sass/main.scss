@@ -417,16 +417,31 @@ body {
 }
 
 // CONTACT
-.form-box {
-	background-color: $gray-color;
-	width: 100vw;
-}
+
+// .form-box {
+// 	background-color: $gray-color;
+// 	width: 100vw;
+// }
+// .form.error input {
+// 	border: 1px solid rgb(0, 147, 260);
+// 	background-color: rgba(0, 147, 260, 0.2);
+// }
+
+// .form .error-text {
+// 	margin: 5px 0 0 10px;
+// 	font-size: 14px;
+// 	color: blue;
+// 	visibility: hidden;
+// }
+// .form.error .error-text {
+// 	visibility: visible;
+// }
 .form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 80%;
+	width: 80vw;
 	margin: 1em auto;
 
 	&__name,
